@@ -4,6 +4,12 @@
     <IncludeTests>true</IncludeTests>
     <IncludeVSSDK>true</IncludeVSSDK>
   </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|AnyCPU'">
+    <CodeAnalysisRuleSet>Clide.UnitTests.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <CodeAnalysisRuleSet>Clide.UnitTests.ruleset</CodeAnalysisRuleSet>
+  </PropertyGroup>
   <ItemGroup>
     <Reference Include="System.ComponentModel.Composition" />
     <Reference Include="Microsoft.Build" />
