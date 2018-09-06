@@ -1,6 +1,6 @@
 ﻿<Project Sdk="Microsoft.NET.Sdk">
   <PropertyGroup>
-    <TargetFramework>net461</TargetFramework>
+    <TargetFramework>net46</TargetFramework>
     <IncludeVSSDK>true</IncludeVSSDK>
     <IncludeIntegrationTests>true</IncludeIntegrationTests>
     <AddSyntheticProjectReferencesForSolutionDependencies>false</AddSyntheticProjectReferencesForSolutionDependencies>
@@ -24,8 +24,6 @@
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Clide.Extensibility\Clide.Extensibility.csproj" />
-    <ProjectReference Include="..\Clide.Interfaces\Clide.Interfaces.csproj" />
     <ProjectReference Include="..\Clide\Clide.csproj" />
     <ProjectReference Include="..\Clide.Vsix\Clide.Vsix.csproj" ReferenceOutputAssembly="false" AdditionalProperties="CreateVsixContainer=true" />
   </ItemGroup>
